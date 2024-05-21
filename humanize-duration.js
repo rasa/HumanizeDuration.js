@@ -106,9 +106,16 @@
     af: language("j", "mnd", "w", "d", "u", "m", "s", "ms", ","),
     // አማርኛ (Amharic)
     am: language("ዓ", "ወ", "ሳ", "ቀ", "ሰ", "ደ", "ሰከ", "ሳ", "ሚሊ"),
-    //العربية (Arabic) (RTL)
+     //العربية (Arabic) (RTL)
+    // https://github.com/EvanHahn/HumanizeDuration.js/issues/221#issuecomment-2119762498
+    // year -> ع stands for "عام" or س stands for "سنة"
+    // month -> ش stands for "شهر"
+    // week -> أ stands for "أسبوع"
+    // day -> ي stands for "يوم"
+    // hour -> س stands for "ساعة"
+    // minute -> د stands for "دقيقة"
+    // second -> ث stands for "ثانية"
     ar: assign(language("س", "ش", "أ", "ي", "س", "د", "ث", "م ث", ","), {
-      delimiter: " ",
       _digitReplacements: ["۰", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"]
     }),
     // български (Bulgarian)
@@ -117,7 +124,7 @@
     bn: language("ব", "ম", "সপ্তা", "দ", "ঘ", "মি", "স", "মি.স"),
     // català (Catalan)
     ca: language("a", "mes", "set", "d", "h", "m", "s", "ms", ","),
-    //کوردیی ناوەڕاست (Central Kurdish) (RTL)
+     //کوردیی ناوەڕاست (Central Kurdish) (RTL)
     ckb: language("م چ", "چ", "خ", "ک", "ڕ", "ه", "م", "س", "."),
     // čeština (Czech)
     cs: language("r", "měs", "t", "d", "h", "m", "s", "ms", ","),
@@ -139,7 +146,7 @@
     et: language("a", "k", "n", "p", "t", "m", "s", "ms", ","),
     // euskara (Basque)
     eu: language("u", "h", "a", "e", "o", "m", "s", "ms", ","),
-    //فارسی (Farsi/Persian) (RTL)
+     //فارسی (Farsi/Persian) (RTL)
     fa: language("س", "ما", "ه", "ر", "سا", "دقی", "ثانی", "میلی‌ثانیه"),
     // suomi (Finnish)
     fi: language("v", "kk", "vk", "pv", "t", "m", "s", "ms", ","),
@@ -149,7 +156,7 @@
     fr: language("a", "m", "sem", "j", "h", "m", "s", "ms", ","),
     // Ελληνικά (Greek) (el)
     gr: GREEK,
-    //עברית (Hebrew) (RTL)
+     //עברית (Hebrew) (RTL)
     he: language("ש׳", "ח׳", "שב׳", "י׳", "שע׳", "ד׳", "שנ׳", "מל׳"),
     // hrvatski (Croatian)
     hr: language("g", "mj", "t", "d", "h", "m", "s", "ms", ","),
@@ -194,7 +201,7 @@
     // polski (Polish)
     pl: language("r", "mi", "t", "d", "g", "m", "s", "ms", ","),
     // português (Portuguese)
-    pt: language("a", "m", "sem", "d", "h", "min", "s", "ms", ","),
+    pt: language("a", "mês", "sem", "d", "h", "m", "s", "ms", ","),
     // română (Romanian) săpt?
     ro: language("a", "l", "să", "z", "h", "m", "s", "ms", ","),
     // русский (Russian)
@@ -209,7 +216,7 @@
     te: language("సం", "నె", "వ", "రో", "గం", "ని", "సె", "మి.సె"), //
     // українська (Ukrainian)
     uk: language("р", "м", "т", "д", "г", "хв", "с", "мс", ","),
-    //اردو (Urdu) (RTL)
+     //اردو (Urdu) (RTL)
     ur: language("س", "م", "ہ", "د", "گ", "م", "س", "م س"),
     // slovenčina (Slovak)
     sk: language("r", "mes", "t", "d", "h", "m", "s", "ms", ","),
